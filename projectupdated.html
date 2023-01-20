@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>version2nike.in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<style>
+   
+    body{
+        background-image: url("https://www.highsnobiety.com/static-assets/thumbor/sJVm2RvJ05JUvyg0c6jw0W_2GzY=/1500x1000/whatdropsnow.s3.amazonaws.com/product_images/images/119152/90c9a2626f611ab62d70f07e9032b4c04cd35660.jpg");
+
+        background-size: cover;
+        /*background-position: center;*/
+        background-repeat: no-repeat;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    html, body{
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    .header{
+        width: 100%;
+        height: 88px;
+        margin-top: 30px;
+        position: fixed;
+        z-index: 10;
+        background-color: rgba(74, 239, 239, 0.541);
+    }
+
+    .icon{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        z-index: 20;
+       background-color: rgba(74, 239, 239, 0.01);
+       top: 67px;
+       right: 450px;
+       color: white ;
+      
+    }
+
+    .icon :hover{
+        color: black;
+        cursor: pointer;
+    }
+
+    .logo{
+        display: flex;
+        width: 23px;
+        height: 40px;
+        margin: 12px;
+        padding: 23px;
+    }
+
+    h1{
+        
+        color: white;
+        opacity: 0.1;
+        font-size: 15rem;
+        font-family: 'Rowdies', cursive;
+    }
+
+   /* section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;
+        
+    }*/
+
+    .new{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+        margin-top: -105px;
+        font-family: 'Fredoka One', cursive;
+        
+    }
+    
+    .new a{
+        
+        text-decoration: none;
+    }
+
+    li{
+    margin: 23px;
+    padding: 12px;
+    }
+
+    a{
+        color: white;
+    }
+
+    .new a:hover{
+        color: black;
+        text-decoration: 3px underline black;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10px;
+        align-items: center;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .menu li{
+        /*border-bottom: 1px solid rgb(255, 255, 255,0.2);*/
+        list-style-type: none;
+    }
+
+    .menu li a{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px;
+        
+    }
+    
+    #sidebar{
+        height: 85%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 350px;
+        margin-top: 120px;
+        background-color: #06333B;  
+        opacity: 0.8;
+        transform: translateX(700px);
+        transition: transform 275ms ease-in-out;
+        box-shadow: -2px -5px 8px rgba(58, 58, 58, 0.116) ;
+    }
+
+    #box:checked~#sidebar{
+        transform: translateX(0px);
+        
+    }
+
+    input{
+        display: none;
+    }
+
+    #search{
+        font-size: 20px;
+    }
+
+    .menu li i{
+        margin: 2px;
+        padding: 4px;
+    }
+
+    .menu li a:hover{
+      color:   rgb(95, 248, 246);
+       text-decoration: 3px underline black;
+       padding: 10px;
+       margin: 20px;
+    }
+   
+</style>
+
+<body> 
+
+     <div class="header">
+
+         <div class="logo">
+             <img src="https://miro.medium.com/max/900/0*9hcinRdaHicrNpNE.jpg" alt="">
+            </div>
+    
+            <div class="navbar">
+         <ul class="new">
+            <div class="items">
+                <a href="#" id="search"><i class="fa fa-fw fa-search"></i></a>
+            </div>
+            <div class="items">
+                <li><a href="#">MEN</a></li>
+                
+            </div>
+            
+            <div class="items">
+                
+                <li><a href="#">WOMEN</a></li>
+            </div>
+            
+            <div class="items">
+                
+                <li><a href="#">SHOP</a></li>
+            </div>
+            
+            <div class="items">
+                
+                <li><a href="#">LATEST</a></li>
+            </div>
+        </ul>
+    </div>
+
+</div>
+
+<input type="checkbox" id="box">
+<label for="box" class="icon">
+    <i class="material-icons">menu</i>
+</label>
+<div id="sidebar">
+    <ul class="menu">
+       <li><a href="#"><i class="material-icons">person</i>ACCOUNT</a></li>
+       <li><a href="#"><i class="material-icons">shop</i>ORDERS</a></li>
+       <li class="lol"><a href="#"><i class="material-icons">trolley</i>CART</a></li>
+       <li class="lol"><a href="#"><i class="material-icons">help</i>HELP</a></li>
+       <li><a href="#"><i class="material-icons">lock</i>SIGN OUT</a></li>
+    </ul>
+</div>
+
+<!--<section>
+        <h1>JUST DO IT</h1>
+    </section>
+--> 
+   
+</body>
+</html>
