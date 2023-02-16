@@ -1,5 +1,5 @@
 # nikepage
-This is a landing page created with html and css , the head navbar and side navbar is created using flex box
+This is a landing page (just UI part) created with html and css , the head navbar and side navbar is created using flex box and in side bar CSS transform property is used for it's functioning
 
 
 
